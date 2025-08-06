@@ -1,0 +1,14 @@
+{
+  "header": {
+    "titles": {
+      "dashboard": "Dashboard",
+      "courses": "Catálogo de cursos",
+      "bookmarks": "Cursos Guardados",
+      "settings": "Configuración",
+      "history": "Historial",
+      "home": "Inicio",
+      "university": "Universidad",
+      "courseDetail": "Detalle del Curso"
+    }
+  }
+}

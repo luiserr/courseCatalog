@@ -1,0 +1,14 @@
+{
+  "header": {
+    "titles": {
+      "dashboard": "Dashboard",
+      "courses": "Course Catalog",
+      "bookmarks": "Saved Courses",
+      "settings": "Settings",
+      "history": "History",
+      "home": "Home",
+      "university": "University",
+      "courseDetail": "Course Detail"
+    }
+  }
+}

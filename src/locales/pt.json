@@ -1,0 +1,14 @@
+{
+  "header": {
+    "titles": {
+      "dashboard": "Painel",
+      "courses": "Catálogo de cursos",
+      "bookmarks": "Cursos Salvos",
+      "settings": "Configurações",
+      "history": "Histórico",
+      "home": "Início",
+      "university": "Universidade",
+      "courseDetail": "Detalhes do Curso"
+    }
+  }
+}
