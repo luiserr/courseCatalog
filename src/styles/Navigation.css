@@ -1,0 +1,89 @@
+/* Navigation Styles */
+.navbar-custom {
+  background-color: #ffffff;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar-brand-custom:hover {
+  text-decoration: none;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.brand-text-pink {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FF6B9D;
+}
+
+.brand-text-dark {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.nav-link-custom {
+  color: #6c757d;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 0.95rem;
+}
+
+.nav-link-custom:hover {
+  background-color: rgba(0,0,0,0.05);
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.navbar-btn-custom {
+  background-color: #B8860B;
+  border-color: #B8860B;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-left: 15px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-btn-custom:hover {
+  background-color: #9A7209;
+  border-color: #9A7209;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .nav-link-custom {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .navbar-btn-custom {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

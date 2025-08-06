@@ -1,0 +1,139 @@
+/* History Page Styles */
+.history-content {
+  padding: 40px;
+  min-height: calc(100vh - 140px);
+}
+
+.history-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.history-header p {
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.history-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid #dee2e6;
+  background: white;
+  color: #6c757d;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: #611232;
+  color: #611232;
+}
+
+.filter-btn.active {
+  background: #611232;
+  color: white;
+  border-color: #611232;
+}
+
+.history-list {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f1f3f4;
+  transition: background-color 0.3s ease;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-item:hover {
+  background-color: #f8f9fa;
+}
+
+.history-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.history-icon i {
+  font-size: 1.2rem;
+}
+
+.history-icon .fa-check-circle {
+  color: #28a745;
+  background: rgba(40, 167, 69, 0.1);
+}
+
+.history-icon .fa-play-circle {
+  color: #ffc107;
+  background: rgba(255, 193, 7, 0.1);
+}
+
+.history-icon .fa-eye {
+  color: #6c757d;
+  background: rgba(108, 117, 125, 0.1);
+}
+
+.history-details {
+  flex: 1;
+}
+
+.history-details h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.history-type {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.history-date {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .history-content {
+    padding: 20px;
+  }
+  
+  .history-item {
+    padding: 15px;
+  }
+  
+  .history-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 12px;
+  }
+}

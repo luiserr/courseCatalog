@@ -1,0 +1,190 @@
+/* University Page Styles */
+.university-page {
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 80px);
+  padding: 20px 30px;
+}
+
+/* Breadcrumb */
+.university-breadcrumb {
+  margin-bottom: 20px;
+}
+
+.breadcrumb-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #611232;
+}
+
+.breadcrumb-link i {
+  font-size: 0.8rem;
+}
+
+/* University Header */
+.university-header {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-banner {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.university-banner-text {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+}
+
+.university-info {
+  text-align: left;
+}
+
+.university-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.university-address {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.university-rating {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.star-filled {
+  color: #ffc107;
+}
+
+.star-empty {
+  color: #e9ecef;
+}
+
+/* University Content */
+.university-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.university-about {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-about h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: #495057;
+  line-height: 1.7;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Courses Section */
+.university-courses {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-courses h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .university-page {
+    padding: 15px 20px;
+  }
+  
+  .university-header {
+    padding: 20px;
+  }
+  
+  .university-banner {
+    height: 150px;
+  }
+  
+  .university-banner-text {
+    font-size: 3.5rem;
+  }
+  
+  .university-name {
+    font-size: 1.5rem;
+  }
+  
+  .university-about,
+  .university-courses {
+    padding: 20px;
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .university-banner {
+    height: 120px;
+  }
+  
+  .university-banner-text {
+    font-size: 2.5rem;
+  }
+  
+  .university-name {
+    font-size: 1.3rem;
+  }
+}

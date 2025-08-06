@@ -1,0 +1,90 @@
+/* Header Component Styles */
+.catalog-header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 15px 30px;
+}
+
+.catalog-title-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.catalog-logo img {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+}
+
+.catalog-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+  color: #2c3e50;
+}
+
+.catalog-user-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #611232;
+  padding: 10px 20px;
+  border-radius: 0 0 0 50px;
+  color: white;
+}
+
+.catalog-notifications {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.catalog-notifications:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.catalog-user-profile:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-user-profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .catalog-header {
+    padding: 15px 20px;
+  }
+  
+  .catalog-title {
+    font-size: 1.5rem;
+  }
+  
+  .catalog-user-section {
+    gap: 15px;
+    padding: 8px 15px;
+  }
+}
