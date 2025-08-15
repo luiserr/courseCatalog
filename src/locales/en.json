@@ -10,5 +10,93 @@
       "university": "University",
       "courseDetail": "Course Detail"
     }
+  },
+  "courseCatalog": {
+    "title": "Course Catalog",
+    "loading": "Loading courses...",
+    "error": "Error loading courses",
+    "retry": "Retry",
+    "noResults": "No courses found",
+    "filters": {
+      "title": "Filters",
+      "clear": "Clear filters",
+      "area": "Knowledge area",
+      "level": "Level",
+      "institution": "Institution"
+    }
+  },
+  "courseDetail": {
+    "tabs": {
+      "profile": "Profile",
+      "content": "Content",
+      "instructors": "Instructors"
+    },
+    "actions": {
+      "enroll": "Enroll",
+      "download": "Download PDF",
+      "bookmark": "Save course",
+      "share": "Share"
+    },
+    "info": {
+      "students": "students have already taken it",
+      "instructor": "Instructor:",
+      "duration": "Duration:",
+      "level": "Level:",
+      "rating": "Rating:",
+      "price": "Price:",
+      "university": "University",
+      "hours": "hours"
+    },
+    "content": {
+      "title": "Learn about the course content",
+      "learningTitle": "What you'll learn:",
+      "syllabusTitle": "Course curriculum:",
+      "conclusion": "Course conclusion",
+      "description_not_found": "Description not found"
+    },
+    "instructors": {
+      "title": "Meet your instructors",
+      "experience": "years of experience",
+      "students": "students"
+    },
+    "loading": "Loading course details...",
+    "error": "Error loading course",
+    "retry": "Retry",
+    "notFound": "Course not found"
+  },
+  "courseCard": {
+    "defaultButton": "View Course",
+    "moreButton": "View more",
+    "university": "University"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next"
+  },
+  "levels": {
+    "basico": "Basic",
+    "intermedio": "Intermediate", 
+    "avanzado": "Advanced"
+  },
+  "areas": {
+    "tecnologia": "Technology",
+    "idiomas": "Languages",
+    "negocios": "Business",
+    "ciencias": "Sciences",
+    "arte": "Arts & Design",
+    "general": "General"
+  },
+  "institutions": {
+    "territorium": "Territorium",
+    "tec_monterrey": "Tec de Monterrey",
+    "unam": "UNAM",
+    "default": "Institution"
   }
 }

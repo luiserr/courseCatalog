@@ -5,6 +5,194 @@
   padding: 20px 30px;
 }
 
+/* Loading State */
+.course-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e3f2fd;
+  border-top: 4px solid #611232;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.course-loading p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Error State */
+.course-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 40px;
+}
+
+.course-error h3 {
+  color: #e53e3e;
+  margin: 0 0 16px 0;
+  font-size: 1.5rem;
+}
+
+.course-error p {
+  color: #c53030;
+  margin: 0 0 24px 0;
+  font-size: 1rem;
+}
+
+.retry-btn {
+  background-color: #611232;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.retry-btn:hover {
+  background-color: #4a0d26;
+}
+
+/* Syllabus Section */
+.syllabus-section {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e9ecef;
+}
+
+.syllabus-section h4 {
+  color: #611232;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.syllabus-content {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #611232;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Estilos para HTML dentro de las descripciones */
+.course-description p,
+.content-text p,
+.syllabus-content p {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.course-description p:last-child,
+.content-text p:last-child,
+.syllabus-content p:last-child {
+  margin-bottom: 0;
+}
+
+.course-description strong,
+.course-description b,
+.content-text strong,
+.content-text b,
+.syllabus-content strong,
+.syllabus-content b {
+  font-weight: 600;
+  color: #495057;
+}
+
+.course-description em,
+.course-description i,
+.content-text em,
+.content-text i,
+.syllabus-content em,
+.syllabus-content i {
+  font-style: italic;
+}
+
+.course-description ul,
+.course-description ol,
+.content-text ul,
+.content-text ol,
+.syllabus-content ul,
+.syllabus-content ol {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.course-description li,
+.content-text li,
+.syllabus-content li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.course-description br,
+.content-text br,
+.syllabus-content br {
+  line-height: 1.4;
+}
+
+.course-description h1,
+.course-description h2,
+.course-description h3,
+.course-description h4,
+.course-description h5,
+.course-description h6,
+.content-text h1,
+.content-text h2,
+.content-text h3,
+.content-text h4,
+.content-text h5,
+.content-text h6,
+.syllabus-content h1,
+.syllabus-content h2,
+.syllabus-content h3,
+.syllabus-content h4,
+.syllabus-content h5,
+.syllabus-content h6 {
+  margin: 16px 0 8px 0;
+  color: #611232;
+}
+
+.course-description a,
+.content-text a,
+.syllabus-content a {
+  color: #611232;
+  text-decoration: underline;
+}
+
+.course-description a:hover,
+.content-text a:hover,
+.syllabus-content a:hover {
+  color: #4a0d26;
+}
+
 /* Breadcrumb */
 .course-breadcrumb {
   margin-bottom: 20px;

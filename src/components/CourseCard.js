@@ -1,9 +1,13 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { createSafeHTML } from '../utils/htmlSanitizer';
 import '../styles/CourseCard.css';
 
 const CourseCard = ({ course }) => {
+  const { t } = useTranslation();
+
   return (
     <Card className="catalog-course-card">
       <div className="course-image-wrapper">
@@ -21,22 +25,25 @@ const CourseCard = ({ course }) => {
           <div className="university-logo">
             <img src="/logo192.png" alt="University" />
           </div>
-          <div className="university-details">
-            <span className="university-type">Universidad</span>
-            <span className="university-name">{course.university}</span>
-          </div>
+                  <div className="university-details">
+          <span className="university-type">{t('courseCard.university')}</span>
+          <span className="university-name">{course.university}</span>
+        </div>
         </div>
 
         {/* Course title */}
         <h3 className="catalog-course-title">{course.title}</h3>
         
         {/* Course description */}
-        <p className="catalog-course-description">{course.description}</p>
+        <div 
+          className="catalog-course-description"
+          dangerouslySetInnerHTML={{__html: createSafeHTML(course.description)}}
+        />
         
         {/* Action button */}
         <div className="course-button-wrapper">
           <Link to={`/course/${course.id}`} className="catalog-course-btn">
-            {course.buttonText || "Ver Curso"}
+            {course.buttonText || t('courseCard.defaultButton')}
           </Link>
         </div>
       </Card.Body>

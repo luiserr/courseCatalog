@@ -1,87 +1,36 @@
-/* Course Catalog Content Styles */
-.course-catalog-content {
+/* Course Catalog Layout Styles */
+.course-catalog-layout {
+  display: flex;
   background-color: #f8f9fa;
   min-height: calc(100vh - 80px);
 }
 
-.catalog-main-wrapper {
-  display: flex;
-  min-height: calc(100vh - 140px);
-}
-
-/* Sección de búsqueda */
-.catalog-search-section {
-  background-color: #e9ecef;
-  padding: 20px 30px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.catalog-filters-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 15px;
-  background-color: white;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  color: #495057;
-  transition: all 0.3s ease;
-}
-
-.catalog-filters-toggle:hover {
-  background-color: #f8f9fa;
-  border-color: #667eea;
-}
-
-.catalog-search-bar {
+.catalog-main-content {
   flex: 1;
-  position: relative;
-  max-width: 500px;
-}
-
-.catalog-search-bar i {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #6c757d;
-  font-size: 0.9rem;
-}
-
-.catalog-search-bar input {
-  width: 100%;
-  padding: 12px 15px 12px 45px;
-  border: 1px solid #dee2e6;
-  border-radius: 25px;
-  font-size: 0.9rem;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.catalog-search-bar input:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
-}
-
-/* Contenido de cursos */
-.catalog-content {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Courses Container */
+.courses-container {
   flex: 1;
 }
 
-.catalog-section {
-  margin-bottom: 40px;
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
 }
 
-.section-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-bottom: 20px;
+.no-results h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.no-results p {
+  font-size: 0.95rem;
 }
 
 /* Grid de cursos */
@@ -285,35 +234,23 @@
 }
 
 @media (max-width: 768px) {
-  .catalog-main-wrapper {
+  .course-catalog-layout {
     flex-direction: column;
+  }
+  
+  .catalog-main-content {
+    padding: 20px;
   }
   
   .catalog-right-sidebar {
     width: 100%;
     position: static;
     height: auto;
-  }
-  
-  .catalog-search-section {
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .catalog-search-bar {
-    max-width: none;
-  }
-  
-  .catalog-content {
-    padding: 20px;
+    border-left: none;
+    border-top: 1px solid #dee2e6;
   }
   
   .courses-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .universities-grid {
     grid-template-columns: 1fr;
   }
   
@@ -325,4 +262,76 @@
   .chat-bubble {
     margin: 0 auto;
   }
+}
+
+/* Estados de carga y error */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e3f2fd;
+  border-top: 4px solid #1976d2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+  background-color: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+.error-container h4 {
+  color: #e53e3e;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.error-container p {
+  color: #c53030;
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+.retry-button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.retry-button:hover {
+  background-color: #1565c0;
 }

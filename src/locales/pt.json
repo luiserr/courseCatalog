@@ -10,5 +10,93 @@
       "university": "Universidade",
       "courseDetail": "Detalhes do Curso"
     }
+  },
+  "courseCatalog": {
+    "title": "Catálogo de Cursos",
+    "loading": "Carregando cursos...",
+    "error": "Erro ao carregar cursos",
+    "retry": "Tentar novamente",
+    "noResults": "Nenhum curso encontrado",
+    "filters": {
+      "title": "Filtros",
+      "clear": "Limpar filtros",
+      "area": "Área de conhecimento",
+      "level": "Nível",
+      "institution": "Instituição"
+    }
+  },
+  "courseDetail": {
+    "tabs": {
+      "profile": "Perfil",
+      "content": "Conteúdo",
+      "instructors": "Instrutores"
+    },
+    "actions": {
+      "enroll": "Inscrever-se",
+      "download": "Baixar PDF",
+      "bookmark": "Salvar curso",
+      "share": "Compartilhar"
+    },
+    "info": {
+      "students": "estudantes já fizeram este curso",
+      "instructor": "Instrutor:",
+      "duration": "Duração:",
+      "level": "Nível:",
+      "rating": "Avaliação:",
+      "price": "Preço:",
+      "university": "Universidade",
+      "hours": "horas"
+    },
+    "content": {
+      "title": "Conheça o conteúdo do curso",
+      "learningTitle": "O que você aprenderá:",
+      "syllabusTitle": "Programa do curso:",
+      "conclusion": "Conclusão do curso",
+      "description_not_found": "Descrição não encontrada"
+    },
+    "instructors": {
+      "title": "Conheça seus instrutores",
+      "experience": "anos de experiência",
+      "students": "estudantes"
+    },
+    "loading": "Carregando detalhes do curso...",
+    "error": "Erro ao carregar curso",
+    "retry": "Tentar novamente",
+    "notFound": "Curso não encontrado"
+  },
+  "courseCard": {
+    "defaultButton": "Ver Curso",
+    "moreButton": "Ver mais",
+    "university": "Universidade"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "retry": "Tentar novamente",
+    "close": "Fechar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "back": "Voltar",
+    "next": "Próximo"
+  },
+  "levels": {
+    "basico": "Básico",
+    "intermedio": "Intermediário", 
+    "avanzado": "Avançado"
+  },
+  "areas": {
+    "tecnologia": "Tecnologia",
+    "idiomas": "Idiomas",
+    "negocios": "Negócios",
+    "ciencias": "Ciências",
+    "arte": "Arte e Design",
+    "general": "Geral"
+  },
+  "institutions": {
+    "territorium": "Territorium",
+    "tec_monterrey": "Tec de Monterrey",
+    "unam": "UNAM",
+    "default": "Instituição"
   }
 }

@@ -110,6 +110,131 @@
   -webkit-box-orient: vertical;
 }
 
+/* Estilos para HTML dentro de la descripción */
+.catalog-course-description p {
+  margin: 0 0 8px 0;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+.catalog-course-description p:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-course-description strong,
+.catalog-course-description b {
+  font-weight: 600;
+  color: #495057;
+}
+
+.catalog-course-description em,
+.catalog-course-description i {
+  font-style: italic;
+}
+
+.catalog-course-description br {
+  line-height: 1.2;
+}
+
+.catalog-course-description ul,
+.catalog-course-description ol {
+  margin: 0;
+  padding-left: 16px;
+  font-size: inherit;
+}
+
+.catalog-course-description li {
+  margin-bottom: 2px;
+}
+
+/* Estados de carga */
+.catalog-course-card.loading {
+  opacity: 0.8;
+}
+
+.course-loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px 12px 0 0;
+}
+
+.course-loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #611232;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Metadatos del curso */
+.course-metadata {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.course-metadata span {
+  font-size: 0.75rem;
+  color: #6c757d;
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.course-duration {
+  background: #e3f2fd !important;
+  color: #1976d2 !important;
+}
+
+.course-level {
+  background: #f3e5f5 !important;
+  color: #7b1fa2 !important;
+}
+
+.course-rating {
+  background: #fff3e0 !important;
+  color: #f57c00 !important;
+}
+
+/* Estadísticas del curso */
+.course-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 8px 0;
+  border-top: 1px solid #e9ecef;
+}
+
+.course-stats span {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.course-students {
+  color: #28a745 !important;
+}
+
+.course-price {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
 /* Button wrapper */
 .course-button-wrapper {
   margin-top: auto;
